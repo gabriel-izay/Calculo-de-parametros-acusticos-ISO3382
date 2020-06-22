@@ -23,12 +23,6 @@ function handles=gui()
         handles.tabOctavas = uitab(handles.tabgrptablas,'Title','Octavas');
         handles.tabTercios = uitab(handles.tabgrptablas,'Title','Tercios');
     
-    %% Autores
-    %
-%     uicontrol('Parent',handles.d,'Style','text','units','normalized',...
-%         'Position', [0.4 0.97 0.7 0.02],...
-%         'String','Alumnos: Almaraz Juan, Montemarano Marcos, Gonzalez Ian',...
-%         'Fontname', 'calibri','Fontsize',10);
 %% Panels
     %Panel Ajuste
     handles.pnlAjuste = uipanel('Parent',handles.tabMedicion,...
@@ -210,12 +204,12 @@ function handles=gui()
     %% Tabla
     handles.tablaoctava=uitable('Parent',handles.tabOctavas,'Visible','on','units','normalized',...
         'Position',[0 0 1 1]);
-    handles.tablaoctava.RowName={'TR10','TR20','TR30','EDT'};
+    handles.tablaoctava.RowName={'TR10','TR20','TR30','EDT','C80','D50'};
     handles.tablaoctava.ColumnName={'     31,5 Hz     ','     63 Hz     ','     125 Hz     ','     250 Hz     ','     500 Hz     ','     1000 Hz     ','     2000 Hz     ','     4000 Hz     ','     8000 Hz     ','     16000 Hz     '};
    
     handles.tablatercio=uitable('Parent',handles.tabTercios,'Visible','on','units','normalized',...
         'Position',[0 0 1 1]);
-    handles.tablatercio.RowName={'TR10','TR20','TR30','EDT'};
+    handles.tablatercio.RowName={'TR10','TR20','TR30','EDT','C80','D50'};
     handles.tablatercio.ColumnName={'     25 Hz     ','     31,5 Hz     ','     40 Hz     ','     50 Hz     ','     63 Hz     ','    80 Hz     ','     100 Hz     ', '     125 Hz     ', '     160 Hz     ', '     200 Hz     ', '     250 Hz     ', '     315 Hz     ', '     400 Hz     ', '     500 Hz     ', '     630 Hz     ', '     800 Hz     ', '     1000 Hz     ', '     1250 Hz     ', '     1600 Hz     ', '     2000 Hz     ', '     2500 Hz     ', '     3150 Hz     ', '     4000 Hz     ', '     5000 Hz     ', '     6300 Hz     ', '     8000 Hz     ', '     10000 Hz     ', '     12500 Hz     ', '     16000 Hz     ', '     20000 Hz     '};
     %% Botones
     % Seleccionar archivo
